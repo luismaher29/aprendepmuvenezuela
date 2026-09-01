@@ -35,3 +35,7 @@ npm start
 - Imágenes: `public/courses` y `public/instructor`
 
 El botón de compra abre directamente el WhatsApp oficial configurado en `data/siteConfig.ts`.
+
+## Estadísticas de visitas
+
+Vercel Web Analytics ya está integrado mediante el paquete oficial `@vercel/analytics`. Después de subir esta versión a GitHub y de que Vercel termine el nuevo despliegue, visita la página publicada y navega por ella. Los primeros datos suelen aparecer en **Analytics** poco después de recibir visitas reales. Los bloqueadores de publicidad pueden impedir que una visita concreta sea contabilizada.
