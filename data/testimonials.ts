@@ -1,0 +1,5 @@
+export const testimonials = [
+  {name:'Rhina Margarita A.',location:'Estudiante Aprende PMU',course:'Formación online',text:'¡Excelente! Muy completo, muy bien explicado y demostrado. Transmite mucha pasión y confianza. Muy buen material de apoyo. Me ha gustado muchísimo y he aprendido tanto de diseño, antes y después del procedimiento. Mucha orientación como profesional.'},
+  {name:'Lina Alejandra D.',location:'Estudiante Aprende PMU',course:'Formación online',text:'Ha sido el mejor curso que pude tomar. Anteriormente hice un curso de micropigmentación en general, pero tuve muchas dudas y este curso me las ha resuelto. He aprendido bastante, no solo del procedimiento, sino de la piel y todo lo que conlleva realizar estos procedimientos.'},
+  {name:'Ana Lucia Martinez C.',location:'Estudiante Aprende PMU',course:'Formación online',text:'Excelente para explicar a detalle, me gustó muchísimo. Aprendí más que en los cursos presenciales que he tomado. ¡Felicidades! Espero tengas de labios y ojos para tomarlos también.'},
+];
