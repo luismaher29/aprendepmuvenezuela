@@ -34,7 +34,7 @@ body{background:var(--paper)}
 @media(max-width:900px){
 html,body{width:100%;max-width:100%;overflow-x:clip}
 main,.section,.hero>*,.problem>*,.section-head>*,.course-card>*,.resource-list article>*,.trust>*,.instructor>*,.faq>*{min-width:0;max-width:100%}
-h1,h2,h3,h4,p,a,span,strong{overflow-wrap:break-word}
+h1,h2,h3,h4{overflow-wrap:normal;word-break:normal;hyphens:none;text-wrap:balance}p,a,span,strong{overflow-wrap:break-word}
 .hero,.problem,.trust,.instructor,.faq{width:100%}
 .hero-visual{width:100%}
 .testimonial-scroll{max-width:100%;overscroll-behavior-inline:contain}
@@ -43,17 +43,17 @@ h1,h2,h3,h4,p,a,span,strong{overflow-wrap:break-word}
 .section{padding:68px 20px}
 .nav{height:72px;padding:0 16px}.brand strong{font-size:1.5rem}.nav>.button{padding:10px 12px;font-size:.7rem}
 .hero{padding-top:38px;padding-bottom:48px;gap:36px}
-h1{font-size:clamp(2.3rem,10vw,2.45rem);line-height:.98;letter-spacing:-.035em}
+h1{font-size:clamp(2.18rem,9.4vw,2.32rem);line-height:1;letter-spacing:-.035em}
 h2{font-size:clamp(2.35rem,11vw,2.85rem);line-height:.98}
 .hero .lead{font-size:1rem}.benefit{padding-left:18px;margin:24px 0}.benefit span{font-size:.61rem;letter-spacing:.13em}
 .actions{display:grid;grid-template-columns:1fr;width:100%}.actions .button{width:100%;white-space:normal;text-align:center}
 .hero-meta{gap:8px;font-size:.55rem;line-height:1.6}.hero-visual{min-height:440px}.photo-label{left:20px;right:20px}.photo-label strong{font-size:1.35rem}
 .trust-line{padding-inline:20px;flex-wrap:wrap;justify-content:center;white-space:normal;gap:8px 18px}.trust{padding-inline:20px}.metrics{grid-template-columns:1fr 1fr}.metrics div{min-width:0;padding:22px 16px}.metrics strong{font-size:2.45rem}.metrics span{font-size:.64rem}
-.resource-title h3{font-size:2.15rem}.resource-copy h4{font-size:1.65rem}.resource-buy strong{font-size:1.85rem}
+.course-card h3{font-size:1.65rem;line-height:1.08}.resource-title h3{font-size:2.15rem}.resource-copy h4{font-size:1.55rem;line-height:1.08}.resource-buy strong{font-size:1.85rem}
 .steps>h2{margin-bottom:45px}.steps article{padding-inline:12px}
 .editorial-statement{padding:90px 20px}.editorial-statement h2{font-size:2.65rem}
 .instructor>div:last-child{padding:60px 20px}.instructor-photo{min-height:560px}
 .testimonial-scroll{display:grid;grid-template-columns:1fr;overflow:visible}.testimonial-scroll article{min-width:0;width:100%;padding:26px 22px}
 .faq h2{font-size:2.65rem}.final{padding:95px 20px}.footer{padding-inline:20px}
 }
-@media(max-width:360px){h1{font-size:2rem;line-height:1.01}.metrics{grid-template-columns:1fr}.metrics div{border-right:0}.metrics strong{font-size:2.35rem}.floating{display:none}}
+@media(max-width:360px){h1{font-size:1.78rem;line-height:1.03}.course-card h3{font-size:1.35rem}.resource-copy h4{font-size:1.35rem}.metrics{grid-template-columns:1fr}.metrics div{border-right:0}.metrics strong{font-size:2.35rem}.floating{display:none}}
