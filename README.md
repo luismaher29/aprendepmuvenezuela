@@ -9,6 +9,8 @@ Landing page independiente, preparada para GitHub y Vercel. No requiere cuenta d
 3. En Vercel, selecciona **Add New → Project** e importa el repositorio.
 4. Vercel detectará **Next.js** automáticamente. Conserva los valores predeterminados y pulsa **Deploy**.
 
+Importante: el repositorio debe contener `package-lock.json` y no debe contener `pnpm-lock.yaml` ni `pnpm-workspace.yaml`. El archivo `vercel.json` incluido obliga a Vercel a instalar con `npm ci` para evitar que elija otro gestor por error.
+
 ## Trabajar localmente
 
 Se recomienda Node.js 22 o superior.
