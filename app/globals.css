@@ -57,3 +57,15 @@ h2{font-size:clamp(2.35rem,11vw,2.85rem);line-height:.98}
 .faq h2{font-size:2.65rem}.final{padding:95px 20px}.footer{padding-inline:20px}
 }
 @media(max-width:360px){h1{font-size:1.78rem;line-height:1.03}.course-card h3{font-size:1.35rem}.resource-copy h4{font-size:1.35rem}.metrics{grid-template-columns:1fr}.metrics div{border-right:0}.metrics strong{font-size:2.35rem}.floating{display:none}}
+
+/* Redes sociales */
+.social-proof{display:grid;grid-template-columns:1fr 1.08fr;gap:80px;align-items:end;border-top:1px solid #ded4c9}
+.social-proof h2{font-size:clamp(2.7rem,4.4vw,4.8rem);max-width:680px;margin-bottom:0}
+.social-links{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #d7cec3}
+.social-links a{display:grid;grid-template-columns:40px 1fr auto;gap:14px;align-items:center;padding:21px 8px;border-bottom:1px solid #d7cec3;transition:color .2s,transform .2s}
+.social-links a:nth-child(odd){padding-right:24px}.social-links a:nth-child(even){padding-left:24px;border-left:1px solid #d7cec3}
+.social-links a:hover{color:var(--petrol);transform:translateY(-2px)}
+.social-links a>span:first-child{width:38px;height:38px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-size:.58rem;letter-spacing:.08em;color:var(--gold)}
+.social-links strong{font-size:.76rem;letter-spacing:.06em}.footer-socials a{display:flex;justify-content:space-between;gap:12px}
+@media(max-width:900px){.social-proof{grid-template-columns:1fr;gap:42px}}
+@media(max-width:560px){.social-proof{padding-top:76px;padding-bottom:76px}.social-proof h2{font-size:2.45rem}.social-links{grid-template-columns:1fr}.social-links a:nth-child(n){padding:18px 4px;border-left:0}}
