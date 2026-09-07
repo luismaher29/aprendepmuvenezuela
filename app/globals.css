@@ -69,3 +69,26 @@ h2{font-size:clamp(2.35rem,11vw,2.85rem);line-height:.98}
 .social-links strong{font-size:.76rem;letter-spacing:.06em}.footer-socials a{display:flex;justify-content:space-between;gap:12px}
 @media(max-width:900px){.social-proof{grid-template-columns:1fr;gap:42px}}
 @media(max-width:560px){.social-proof{padding-top:76px;padding-bottom:76px}.social-proof h2{font-size:2.45rem}.social-links{grid-template-columns:1fr}.social-links a:nth-child(n){padding:18px 4px;border-left:0}}
+
+/* Paleta oficial Aprende PMU 2026: solo color, sin cambios de composición */
+:root{--ink:#222222;--cream:#F4F0E9;--paper:#F4F0E9;--sand:#D9A6A6;--gold:#A98262;--muted:#665f5a;--petrol:#294C60;--sun:#D9A6A6;--wine:#5A2638}
+.nav{border-color:rgba(169,130,98,.26);background:rgba(244,240,233,.94)}
+.light{color:#F4F0E9}.button-dark{background:var(--petrol);border-color:var(--petrol)}
+.benefit{border-left-color:var(--wine)}.benefit span{color:var(--wine)}
+.hero-note{border-left-color:var(--wine)}.trust-line{border-color:rgba(169,130,98,.3)}
+.before-after,.course-card,.testimonial-scroll article{border-color:rgba(169,130,98,.3)}
+.before-after .now,.footer{background:var(--ink)}
+.payment-wrap,.editorial-statement,.instructor{background:var(--wine)}
+.payment-grid article{border-color:rgba(244,240,233,.24)!important}.payment-grid article:nth-child(2){background:rgba(34,34,34,.22)}
+.payment-grid p,.payment-wrap .section-head>p,.security,.instructor>div:last-child>p:not(.eyebrow){color:rgba(244,240,233,.76)}
+.payment-icon{border-color:var(--bronze,#A98262);color:var(--cream)}
+.course-card,.testimonial-scroll article{background:var(--cream)}.course-card.featured{background:var(--wine)}
+.course-card.featured .course-body>p:not(.course-level,.saving){color:rgba(244,240,233,.76)}
+.course-card.featured .prices,.course-card.featured .prices div+div{border-color:rgba(244,240,233,.24)}
+.course-card.featured .prices strong,.editorial-statement em{color:#D9A6A6}
+.prices,.resources,.resource-title,.resource-list article,.steps>div,.faq details,.social-proof,.social-links,.social-links a{border-color:rgba(169,130,98,.3)}
+.trust{background:rgba(217,166,166,.2)}.metrics{border-color:rgba(90,38,56,.25)}.metrics div{border-color:rgba(90,38,56,.25)}
+.instructor{border-color:rgba(244,240,233,.18)}.bio-points{border-color:rgba(244,240,233,.24)}.bio-points span{color:rgba(244,240,233,.9)}
+.final{background:var(--petrol)}.button-outline{border-color:rgba(244,240,233,.55)}
+.floating{background:var(--petrol)}.disclaimer{border-color:rgba(244,240,233,.2)}
+.social-links a:hover{color:var(--wine)}
