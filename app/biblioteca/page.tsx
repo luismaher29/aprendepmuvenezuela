@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react';
 import type { Metadata } from 'next';
 import { whatsappUrl } from '@/lib/whatsapp';
 import styles from './page.module.css';
@@ -105,7 +106,7 @@ export default function BibliotecaPage() {
 
           <div className={styles.stack} aria-label="Colección de manuales Aprende PMU">
             {products.map((product, i) => (
-              <article key={product.title} className={`${styles.book} ${styles[product.tone]}`} style={{ '--i': i } as React.CSSProperties}>
+              <article key={product.title} className={`${styles.book} ${styles[product.tone]}`} style={{ '--i': i } as CSSProperties}>
                 <small>APRENDE PMU</small>
                 <span>{product.index}</span>
                 <div>
