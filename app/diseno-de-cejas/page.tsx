@@ -119,29 +119,28 @@ export default function DisenoDeCejasVenezuela() {
           </p>
 
           <div className={styles.steps}>
-            <div><b>01</b><span>Realiza el pago de <strong>9.99 USDT</strong> por Binance.</span></div>
-            <div><b>02</b><span>Guarda el ID de la transacción o comprobante.</span></div>
+            <div><b>01</b><span>Escanea el QR y realiza el pago de <strong>9.99 USDT</strong> por Binance.</span></div>
+            <div><b>02</b><span>Guarda el ID de la transacción o una captura del comprobante.</span></div>
             <div><b>03</b><span>Completa el formulario con tu nombre y correo.</span></div>
             <div><b>04</b><span>Después de verificar el pago, recibirás la guía por email.</span></div>
           </div>
 
           <div className={styles.binanceBox}>
-            <div className={styles.qrPlaceholder} aria-label="Espacio reservado para QR de Binance">
-              <span>BINANCE</span>
-              <strong>QR / PAY ID</strong>
-              <small>Se activará con los datos oficiales de Aprende PMU</small>
+            <div className={styles.qrReal}>
+              <img src="/diseno-cejas/binance-qr.svg" alt="Código QR oficial de Binance Pay de Aprende PMU" />
             </div>
             <div>
-              <small>MONTO EXACTO</small>
+              <small>BINANCE PAY</small>
               <strong>9.99 USDT</strong>
-              <p>Usa únicamente los datos oficiales publicados en esta página.</p>
+              <p>Usuario Binance: <b>luisher29</b></p>
+              <p>Escanea el QR desde la app de Binance y verifica que el destinatario coincida antes de confirmar.</p>
             </div>
           </div>
         </div>
 
         <form
           className={styles.form}
-          action="https://formsubmit.co/aprendemicroblading@gmail.com"
+          action="https://formsubmit.co/aprendepmu@gmail.com"
           method="POST"
           encType="multipart/form-data"
         >
@@ -196,7 +195,7 @@ export default function DisenoDeCejasVenezuela() {
         <div>
           <details><summary>¿La guía es física?</summary><p>No. Es un producto 100% digital y se entrega por correo electrónico.</p></details>
           <details><summary>¿Necesito ser micropigmentadora?</summary><p>No. También es útil si trabajas con diseño tradicional, henna, laminado o estás comenzando en el mundo de las cejas.</p></details>
-          <details><summary>¿Cómo se realiza el pago?</summary><p>La oferta Venezuela de 9.99 USDT se paga directamente por Binance usando los datos oficiales publicados en esta página.</p></details>
+          <details><summary>¿Cómo se realiza el pago?</summary><p>La oferta Venezuela de 9.99 USDT se paga directamente por Binance usando el QR oficial publicado en esta página.</p></details>
           <details><summary>¿Cuándo recibo la guía?</summary><p>Después de verificar el pago, la enviamos al correo que registraste en el formulario.</p></details>
           <details><summary>¿Puedo compartirla con otra persona?</summary><p>No. La compra es para uso personal. El contenido está protegido por derechos de autor.</p></details>
         </div>
@@ -205,7 +204,7 @@ export default function DisenoDeCejasVenezuela() {
       <footer className={styles.footer}>
         <a href="/" className={styles.brand}><span>APRENDE</span><strong>PMU</strong></a>
         <p>Formación profesional en micropigmentación · Venezuela</p>
-        <a href="mailto:aprendemicroblading@gmail.com">aprendemicroblading@gmail.com</a>
+        <a href="mailto:aprendepmu@gmail.com">aprendepmu@gmail.com</a>
       </footer>
     </main>
   );
