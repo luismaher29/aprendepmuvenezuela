@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import styles from './page.module.css';
+import { whatsappUrl } from '@/lib/whatsapp';
 
 export const metadata: Metadata = {
   title: 'Guía Profesional de Diseño de Cejas | Venezuela · Aprende PMU',
@@ -18,6 +19,29 @@ const benefits = [
   'Capítulo especial de cejas semipermanentes con henna',
 ];
 
+const whatsappMessage =
+  'Hola, estoy en Venezuela 🇻🇪 y quiero adquirir la Guía Profesional de Diseño de Cejas por 9.99 USDT. Quiero recibir los datos para realizar el pago por Binance.';
+
+const buyUrl = whatsappUrl(whatsappMessage, {
+  source: 'landing_diseno_cejas',
+  medium: 'whatsapp',
+  campaign: 'guia_999_venezuela',
+});
+
+function WhatsAppButton({ className, label }: { className?: string; label: string }) {
+  return (
+    <a
+      className={className || styles.whatsappButton}
+      href={buyUrl}
+      target="_blank"
+      rel="noreferrer"
+      data-event="click_whatsapp_diseno_cejas"
+    >
+      <span aria-hidden>●</span> {label} ↗
+    </a>
+  );
+}
+
 export default function DisenoDeCejasVenezuela() {
   return (
     <main className={styles.page} id="top">
@@ -26,7 +50,7 @@ export default function DisenoDeCejasVenezuela() {
           <span>APRENDE</span>
           <strong>PMU</strong>
         </a>
-        <a className={styles.navCta} href="#comprar">Comprar por 9.99 USDT</a>
+        <WhatsAppButton className={styles.navCta} label="Comprar por WhatsApp" />
       </header>
 
       <section className={styles.hero}>
@@ -47,8 +71,8 @@ export default function DisenoDeCejasVenezuela() {
               <strong>9.99 <i>USDT</i></strong>
             </div>
           </div>
-          <a className={styles.primaryButton} href="#comprar">Quiero mi guía ↓</a>
-          <p className={styles.meta}>100% digital · Pago por Binance · Entrega por correo</p>
+          <WhatsAppButton label="Quiero mi guía por 9.99 USDT" />
+          <p className={styles.meta}>100% digital · Atención por WhatsApp · Pago por Binance · Entrega por correo</p>
         </div>
 
         <div className={styles.heroVisual}>
@@ -112,81 +136,44 @@ export default function DisenoDeCejasVenezuela() {
 
       <section className={styles.checkoutSection} id="comprar">
         <div className={styles.checkoutIntro}>
-          <p className={styles.eyebrow}>COMPRA DIRECTA · VENEZUELA</p>
+          <p className={styles.eyebrow}>COMPRA ACOMPAÑADA · VENEZUELA</p>
           <h2>Tu guía por <em>9.99 USDT.</em></h2>
           <p>
-            No necesitas escribirnos por WhatsApp. Realiza tu pago por Binance y completa el formulario con el mismo correo donde deseas recibir la guía.
+            Antes de pagar, conversa con nuestro equipo por WhatsApp. Te confirmamos la oferta, compartimos los datos oficiales de Binance y te acompañamos hasta que recibas tu guía.
           </p>
 
           <div className={styles.steps}>
-            <div><b>01</b><span>Escanea el QR y realiza el pago de <strong>9.99 USDT</strong> por Binance.</span></div>
-            <div><b>02</b><span>Guarda el ID de la transacción o una captura del comprobante.</span></div>
-            <div><b>03</b><span>Completa el formulario con tu nombre y correo.</span></div>
-            <div><b>04</b><span>Después de verificar el pago, recibirás la guía por email.</span></div>
-          </div>
-
-          <div className={styles.binanceBox}>
-            <div className={styles.qrReal}>
-              <img src="/diseno-cejas/binance-qr.svg" alt="Código QR oficial de Binance Pay de Aprende PMU" />
-            </div>
-            <div>
-              <small>BINANCE PAY</small>
-              <strong>9.99 USDT</strong>
-              <p>Usuario Binance: <b>luisher29</b></p>
-              <p>Escanea el QR desde la app de Binance y verifica que el destinatario coincida antes de confirmar.</p>
-            </div>
+            <div><b>01</b><span>Pulsa el botón y escríbenos directamente por <strong>WhatsApp</strong>.</span></div>
+            <div><b>02</b><span>Te confirmamos el precio de <strong>9.99 USDT</strong> y te enviamos los datos oficiales para pagar por Binance.</span></div>
+            <div><b>03</b><span>Nos envías por WhatsApp el comprobante, tu nombre y el correo donde quieres recibir la guía.</span></div>
+            <div><b>04</b><span>Verificamos el pago y enviamos la guía digital a tu correo electrónico.</span></div>
           </div>
         </div>
 
-        <form
-          className={styles.form}
-          action="https://formsubmit.co/aprendepmu@gmail.com"
-          method="POST"
-          encType="multipart/form-data"
-        >
-          <input type="hidden" name="_subject" value="Nueva compra · Guía Diseño de Cejas Venezuela · 9.99 USDT" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="https://aprendepmuvenezuela.com/diseno-de-cejas/gracias" />
-          <input type="hidden" name="Producto" value="Guía Profesional de Diseño de Cejas" />
-          <input type="hidden" name="Precio" value="9.99 USDT" />
+        <aside className={styles.whatsappCard}>
+          <span className={styles.chatMark} aria-hidden>WA</span>
+          <p className={styles.formEyebrow}>ATENCIÓN PERSONAL</p>
+          <h3>Habla con una persona antes de pagar.</h3>
+          <p className={styles.cardLead}>
+            Queremos que compres con tranquilidad. Nuestro equipo te atenderá por WhatsApp, resolverá tus dudas y te dará los datos de pago de forma directa.
+          </p>
+          <div className={styles.trustList}>
+            <span>✓ Precio Venezuela confirmado: <strong>9.99 USDT</strong></span>
+            <span>✓ Datos oficiales de Binance enviados por el equipo</span>
+            <span>✓ Puedes enviar el comprobante por el mismo chat</span>
+            <span>✓ Nombre y correo se toman directamente por WhatsApp</span>
+            <span>✓ La guía llega a tu correo después de verificar el pago</span>
+          </div>
+          <WhatsAppButton label="Hablar con Aprende PMU" />
+          <small className={styles.securityNote}>Nunca te pediremos contraseñas, códigos 2FA ni claves privadas de Binance.</small>
+        </aside>
+      </section>
 
-          <p className={styles.formEyebrow}>CONFIRMA TU COMPRA</p>
-          <h3>¿Dónde te enviamos la guía?</h3>
-
-          <label>
-            Nombre y apellido
-            <input name="Nombre" type="text" placeholder="Tu nombre completo" required />
-          </label>
-
-          <label>
-            Correo electrónico
-            <input name="Email" type="email" placeholder="tucorreo@ejemplo.com" required />
-          </label>
-
-          <label>
-            Confirma tu correo
-            <input name="Confirmacion_email" type="email" placeholder="Repite tu correo" required />
-          </label>
-
-          <label>
-            ID / TxID de Binance
-            <input name="Binance_TxID" type="text" placeholder="Pega aquí el ID de la transacción" required />
-          </label>
-
-          <label>
-            Comprobante de pago <span>(opcional)</span>
-            <input name="Comprobante" type="file" accept="image/*,.pdf" />
-          </label>
-
-          <label className={styles.checkbox}>
-            <input type="checkbox" required />
-            <span>Confirmo que el correo ingresado es correcto y será utilizado para recibir mi producto digital.</span>
-          </label>
-
-          <button type="submit">Enviar datos y confirmar compra →</button>
-          <p className={styles.formNote}>La guía se envía por correo después de verificar el pago. No compartas contraseñas, códigos 2FA ni claves privadas.</p>
-        </form>
+      <section className={styles.finalCta}>
+        <p className={`${styles.eyebrow} ${styles.light}`}>PRECIO ESPECIAL VENEZUELA</p>
+        <h2>Más de 190 páginas.<br/><em>Solo 9.99 USDT.</em></h2>
+        <p>Escríbenos por WhatsApp y una persona de nuestro equipo te ayudará a completar tu compra.</p>
+        <WhatsAppButton label="Quiero adquirir la guía" />
       </section>
 
       <section className={styles.faq}>
@@ -195,8 +182,9 @@ export default function DisenoDeCejasVenezuela() {
         <div>
           <details><summary>¿La guía es física?</summary><p>No. Es un producto 100% digital y se entrega por correo electrónico.</p></details>
           <details><summary>¿Necesito ser micropigmentadora?</summary><p>No. También es útil si trabajas con diseño tradicional, henna, laminado o estás comenzando en el mundo de las cejas.</p></details>
-          <details><summary>¿Cómo se realiza el pago?</summary><p>La oferta Venezuela de 9.99 USDT se paga directamente por Binance usando el QR oficial publicado en esta página.</p></details>
-          <details><summary>¿Cuándo recibo la guía?</summary><p>Después de verificar el pago, la enviamos al correo que registraste en el formulario.</p></details>
+          <details><summary>¿Cómo se realiza el pago?</summary><p>Escríbenos por WhatsApp. Nuestro equipo te confirma la oferta de 9.99 USDT y te envía directamente los datos oficiales para realizar el pago por Binance.</p></details>
+          <details><summary>¿Qué datos debo enviar?</summary><p>Después de pagar, puedes enviarnos por el mismo WhatsApp el comprobante, tu nombre y el correo electrónico donde deseas recibir la guía.</p></details>
+          <details><summary>¿Cuándo recibo la guía?</summary><p>Después de verificar el pago, enviamos la guía digital al correo que nos indiques por WhatsApp.</p></details>
           <details><summary>¿Puedo compartirla con otra persona?</summary><p>No. La compra es para uso personal. El contenido está protegido por derechos de autor.</p></details>
         </div>
       </section>
@@ -204,7 +192,7 @@ export default function DisenoDeCejasVenezuela() {
       <footer className={styles.footer}>
         <a href="/" className={styles.brand}><span>APRENDE</span><strong>PMU</strong></a>
         <p>Formación profesional en micropigmentación · Venezuela</p>
-        <a href="mailto:aprendepmu@gmail.com">aprendepmu@gmail.com</a>
+        <WhatsAppButton className={styles.footerLink} label="WhatsApp" />
       </footer>
     </main>
   );
