@@ -15,28 +15,28 @@ const products = [
   {
     index: '01', kicker: 'DISEÑO', title: 'Diseño Profesional de Cejas',
     copy: 'Visagismo, proporciones y criterio para construir diseños más conscientes antes de comenzar un procedimiento.',
-    cover: '/biblioteca/diseno-cejas.webp', infoUrl: 'https://www.aprendemicroblading.com/guiadecejas',
+    cover: '/biblioteca/diseno-cejas.webp', infoUrl: '/diseno-de-cejas',
   },
   {
     index: '02', kicker: 'COLOR', title: 'Colorimetría & Pigmentología',
     copy: 'Piel, subtonos, pigmentos, neutralización y correcciones para comprender mejor el comportamiento del color.',
-    cover: '/biblioteca/colorimetria.webp', infoUrl: 'https://guiapigmentologia.vercel.app/',
+    cover: '/biblioteca/colorimetria.webp', infoUrl: '/guia-pigmentologia',
   },
   {
     index: '03', kicker: 'POWDER', title: 'Efecto Polvo: Técnica y Maestría',
     copy: '192 páginas sobre saturación, degradados, maniobra, parámetros técnicos, piel, cicatrización y errores frecuentes.',
-    cover: '/biblioteca/efecto-polvo.webp', infoUrl: 'https://ebookefectopolvo-gtt8.vercel.app/',
+    cover: '/biblioteca/efecto-polvo.webp', infoUrl: '/ebook-efecto-polvo',
   },
   {
     index: '04', kicker: 'MICROBLADING', title: 'Guía Práctica de Trazos',
     copy: '122 páginas de ejercicios progresivos para trabajar coordinación, precisión, fluidez y construcción de patrones.',
     cover: 'https://static.wixstatic.com/media/9c2f3e_c5b7b893e93a470ba54b693f74fe292d~mv2.jpg/v1/fill/w_461%2Ch_461%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/Gu%C3%ADa%20Pr%C3%A1ctica%20de%20Trazos%20en%20Microblading%20%282%29.jpg',
-    infoUrl: 'https://www.aprendemicroblading.com/gu%C3%ADa-pr%C3%A1ctica-de-trazos-en-microblading',
+    infoUrl: '/guia-trazos-microblading',
   },
   {
     index: '05', kicker: 'HAIRSTROKE', title: 'Manual Maestro de Trazos Hairstroke',
     copy: 'Una guía para desarrollar trazos pelo a pelo con máquina y ampliar el control sobre estructura y patrones.',
-    cover: '/biblioteca/hairstroke.webp', infoUrl: 'https://www.aprendemicroblading.com/manual-trazos-hairstroke',
+    cover: '/biblioteca/hairstroke.webp', infoUrl: '/manual-trazos-hairstroke',
   },
 ] as const;
 
@@ -89,8 +89,8 @@ export default function BibliotecaPage() {
 
       <section className={styles.catalog}>
         {products.map(product=><article key={product.title}>
-          <a className={styles.catalogCover} href={product.infoUrl} target="_blank" rel="noreferrer" style={{backgroundImage:`url("${product.cover}")`}} aria-label={`Ver información de ${product.title}`}/>
-          <div className={styles.catalogBody}><p>{product.index} · {product.kicker}</p><h3>{product.title}</h3><span>{product.copy}</span><a className={styles.inlineLink} href={product.infoUrl} target="_blank" rel="noreferrer">Conocer este manual <Arrow/></a></div>
+          <a className={styles.catalogCover} href={product.infoUrl} style={{backgroundImage:`url("${product.cover}")`}} aria-label={`Ver información de ${product.title}`}/>
+          <div className={styles.catalogBody}><p>{product.index} · {product.kicker}</p><h3>{product.title}</h3><span>{product.copy}</span><a className={styles.inlineLink} href={product.infoUrl}>Conocer este manual <Arrow/></a></div>
         </article>)}
       </section>
 
