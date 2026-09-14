@@ -12,5 +12,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/curso-hairstroke`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${base}/curso-microblading`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${base}/curso-micropigmentacion-ojos`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${base}/curso-human-powder`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
   ];
 }
