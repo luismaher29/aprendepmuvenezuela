@@ -33,7 +33,7 @@ const faq = [
   ['¿Sirven si estoy comenzando?', 'Sí. Los ejercicios avanzan de forma progresiva, pero también son útiles para profesionales que quieren reforzar limpieza, control y naturalidad.'],
   ['¿Sustituyen un curso completo?', 'No. Son manuales de práctica y consulta. Complementan la formación técnica, las demostraciones y el acompañamiento profesional.'],
   ['¿Cuántas páginas incluye el pack?', 'La Guía Práctica de Microblading incluye 122 páginas y el Manual Maestro Hairstroke más de 160 páginas: en conjunto, más de 282 páginas de práctica.'],
-  ['¿Cuál es el precio del pack?', 'El pack tiene un precio especial de US$29.99. Comprados por separado, ambos manuales tienen un valor conjunto de US$47, por lo que ahorras US$17.01.'],
+  ['¿Cuál es el precio del pack?', 'El pack tiene un precio especial de US$29.99. Comprados por separado, ambos manuales tienen un valor conjunto de US$47, por lo que ahorras US$17.'],
   ['¿Cómo se realiza la compra?', 'El botón de compra abre el checkout seguro de Hotmart con las opciones de pago disponibles para tu país.'],
 ] as const;
 
@@ -51,7 +51,7 @@ export default function PackTrazosPage() {
           <p className={styles.eyebrow}>PACK DIGITAL · ENTRENAMIENTO DE TRAZOS</p>
           <h1>Dos técnicas.<br/><em>Una sola rutina de práctica.</em></h1>
           <p className={styles.lead}>Une la precisión del Microblading con la fluidez del Hairstroke y entrena la mano con una progresión diseñada para pasar de trazos aislados a estructuras completas.</p>
-          <div className={styles.facts}><span>+282 páginas</span><span>2 manuales</span><span>US$29.99 el pack</span><span>Ahorras US$17.01</span></div>
+          <div className={styles.facts}><span>+282 páginas</span><span>2 manuales</span><span>US$29.99 el pack</span><span>Ahorras US$17</span></div>
           <div className={styles.actions}>
             <a className={styles.primary} href="#adquirir">Quiero el pack por US$29.99 ↓</a>
             <a className={styles.secondary} href="#manuales">Ver qué incluye</a>
@@ -68,7 +68,7 @@ export default function PackTrazosPage() {
             <div className={styles.bookCover} style={{backgroundImage:"url('/biblioteca/hairstroke.webp')"}}/>
             <span>HAIRSTROKE</span>
           </div>
-          <div className={styles.packBadge}><small>VALOR POR SEPARADO · US$47</small><strong>US$29.99</strong><span>Ahorras US$17.01</span></div>
+          <div className={styles.packBadge}><small>VALOR POR SEPARADO · US$47</small><strong>US$29.99</strong><span>Ahorras US$17</span></div>
         </div>
       </section>
 
@@ -115,7 +115,7 @@ export default function PackTrazosPage() {
         <div><p className={styles.eyebrow}>QUÉ OBTIENES</p><h2>Una biblioteca de práctica enfocada exclusivamente en trazos.</h2></div>
         <div className={styles.valueGrid}>
           {[
-            ['+282','páginas entre ambos manuales'],['US$47','valor comprándolos por separado'],['US$29.99','precio especial del pack'],['US$17.01','de ahorro al llevar ambos']
+            ['+282','páginas entre ambos manuales'],['US$47','valor comprándolos por separado'],['US$29.99','precio especial del pack'],['US$17','de ahorro al llevar ambos']
           ].map(([big,copy])=><article key={copy}><strong>{big}</strong><p>{copy}</p></article>)}
         </div>
       </section>
@@ -129,14 +129,14 @@ export default function PackTrazosPage() {
         <div>
           <p className={`${styles.eyebrow} ${styles.light}`}>PACK DE TRAZOS · APRENDE PMU</p>
           <h2>Dos manuales. Más de 282 páginas. Un precio especial de US$29.99.</h2>
-          <p>Comprándolos por separado pagarías US$47. Con este pack obtienes ambos por US$29.99 y ahorras US$17.01.</p>
-          <div className={styles.checkoutTags}><span>✓ Guía Microblading · 122 páginas</span><span>✓ Manual Hairstroke · +160 páginas</span><span>✓ Ahorras US$17.01</span><span>✓ Compra segura</span></div>
+          <p>Comprándolos por separado pagarías US$47. Con este pack obtienes ambos por US$29.99 y ahorras US$17.</p>
+          <div className={styles.checkoutTags}><span>✓ Guía Microblading · 122 páginas</span><span>✓ Manual Hairstroke · +160 páginas</span><span>✓ Ahorras US$17</span><span>✓ Compra segura</span></div>
         </div>
         <aside className={styles.checkoutCard}>
           <small>VALOR POR SEPARADO · US$47</small>
           <strong>US$29.99</strong>
           <h3>precio especial del pack</h3>
-          <p>Te llevas los dos manuales profesionales y ahorras US$17.01 frente a comprarlos individualmente.</p>
+          <p>Te llevas los dos manuales profesionales y ahorras US$17 frente a comprarlos individualmente.</p>
           <HotmartCheckoutButton href={checkoutUrl} label="Adquirir el pack por US$29.99" className={styles.hotmartButton}/>
           <a className={styles.directLink} href={checkoutUrl} target="_blank" rel="noreferrer">Abrir checkout en una nueva pestaña ↗</a>
           <small className={styles.safe}>Pago procesado de forma segura por Hotmart.</small>
