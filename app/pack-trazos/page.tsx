@@ -5,7 +5,25 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: 'Pack de Trazos Microblading + Hairstroke | Aprende PMU',
   description:
-    'Dos manuales digitales de práctica para entrenar trazos de Microblading y Hairstroke: más de 282 páginas de ejercicios, patrones, conexiones y estructuras por US$29.99.',
+    'Más de 282 páginas de práctica para entrenar trazos de Microblading y Hairstroke. Dos manuales digitales por US$29.99.',
+  alternates: {
+    canonical: '/pack-trazos',
+  },
+  openGraph: {
+    title: 'Pack de Trazos Microblading + Hairstroke',
+    description:
+      '2 manuales · +282 páginas · Microblading + Hairstroke · US$29.99 · Ahorras US$17.',
+    url: '/pack-trazos',
+    siteName: 'Aprende PMU',
+    locale: 'es_ES',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pack de Trazos Microblading + Hairstroke',
+    description:
+      '2 manuales · +282 páginas · Microblading + Hairstroke · US$29.99 · Ahorras US$17.',
+  },
 };
 
 const checkoutUrl = 'https://pay.hotmart.com/S107207226X';
