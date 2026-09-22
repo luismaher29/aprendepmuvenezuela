@@ -70,7 +70,7 @@ export default function PackTrazosPage() {
           <p className={styles.lead}>Une la precisión del Microblading con la fluidez del Hairstroke y entrena la mano con una progresión diseñada para pasar de trazos aislados a estructuras completas.</p>
           <div className={styles.facts}><span>+282 páginas</span><span>2 manuales</span><span>US$29.99 el pack</span><span>Ahorras US$17</span></div>
           <div className={styles.actions}>
-            <a className={styles.primary} href="#adquirir">Quiero el pack por US$29.99 ↓</a>
+            <a className={styles.primary} href={checkoutUrl} target="_blank" rel="noopener noreferrer">Quiero el pack por US$29.99 ↗</a>
             <a className={styles.secondary} href="#manuales">Ver qué incluye</a>
           </div>
           <p className={styles.microcopy}>Valor por separado: US$47 · Precio pack: US$29.99 · Compra segura mediante Hotmart</p>
