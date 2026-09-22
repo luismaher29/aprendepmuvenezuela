@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import HotmartCheckoutButton from '@/components/HotmartCheckoutButton';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
@@ -155,8 +154,7 @@ export default function PackTrazosPage() {
           <strong>US$29.99</strong>
           <h3>precio especial del pack</h3>
           <p>Te llevas los dos manuales profesionales y ahorras US$17 frente a comprarlos individualmente.</p>
-          <HotmartCheckoutButton href={checkoutUrl} label="Adquirir el pack por US$29.99" className={styles.hotmartButton}/>
-          <a className={styles.directLink} href={checkoutUrl} target="_blank" rel="noreferrer">Abrir checkout en una nueva pestaña ↗</a>
+          <a className={styles.hotmartButton} href={checkoutUrl} target="_blank" rel="noopener noreferrer">Adquirir el pack por US$29.99 ↗</a>
           <small className={styles.safe}>Pago procesado de forma segura por Hotmart.</small>
         </aside>
       </section>
