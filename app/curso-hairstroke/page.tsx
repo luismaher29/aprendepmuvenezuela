@@ -93,7 +93,7 @@ export default function CursoHairstrokeVenezuela() {
           <div className={styles.priceCard}>
             <small>PRECIO INTERNACIONAL</small>
             <del>US$250</del>
-            <span>BENEFICIO VENEZUELA · 20% OFF</span>
+            <span>PRECIO VENEZUELA ACTUAL</span>
             <strong>200 <i>USDT</i></strong>
             <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>150 <i>USDT</i></b></div>
           </div>
@@ -225,7 +225,7 @@ export default function CursoHairstrokeVenezuela() {
         </div>
         <aside className={styles.checkoutCard}>
           <small>PRECIO INTERNACIONAL</small><del>US$250</del>
-          <p>PRECIO VENEZUELA · 20% OFF</p>
+          <p>PRECIO VENEZUELA ACTUAL</p>
           <strong>200 <i>USDT</i></strong>
           <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>150 <i>USDT</i></b></div>
           <span>Pago directo · Atención personal por WhatsApp</span>
