@@ -35,7 +35,7 @@ const included = [
 ];
 
 const whatsappMessage =
-  'Hola, estoy en Venezuela 🇻🇪 y quiero inscribirme en el Curso Human Powder por 120 USDT. Quiero recibir la información y los datos para realizar el pago.';
+  'Hola, estoy en Venezuela 🇻🇪 y quiero inscribirme en el Curso Human Powder con el beneficio Binance del 40% por 90 USDT. Quiero recibir los datos para realizar el pago.';
 
 const buyUrl = whatsappUrl(whatsappMessage, {
   source: 'landing_curso_human_powder',
@@ -71,7 +71,9 @@ export default function CursoHumanPowderVenezuela() {
         </div>
         <div className={styles.heroVisual}>
           <div className={styles.heroImage} role="img" aria-label="Curso avanzado Human Powder de Aprende PMU" style={{ backgroundImage: "linear-gradient(180deg,#211c1905,#211c1948),url('/courses/human-powder.webp')", backgroundPosition: 'center' }} />
-          <div className={styles.priceCard}><small>VALOR REGULAR</small><del>US$150</del><span>BENEFICIO VENEZUELA</span><strong>120 <i>USDT</i></strong></div>
+          <div className={styles.priceCard}><small>VALOR REGULAR</small><del>US$150</del><span>BENEFICIO VENEZUELA · 20% OFF</span>
+            <strong>120 <i>USDT</i></strong>
+            <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>90 <i>USDT</i></b></div></div>
         </div>
       </section>
 
@@ -131,7 +133,9 @@ export default function CursoHumanPowderVenezuela() {
 
       <section className={styles.checkout} id="inscripcion">
         <div><p className={`${styles.eyebrow} ${styles.light}`}>BENEFICIO VENEZUELA</p><h2>Eleva tu técnica con <em>Human Powder.</em></h2><p>Accede a la especialización avanzada con precio especial para Venezuela y acompañamiento durante tu proceso.</p><div className={styles.checkoutList}><span>✓ 7 módulos · 38 clases</span><span>✓ Acceso ilimitado</span><span>✓ 6 meses de soporte</span><span>✓ Certificado</span></div></div>
-        <aside className={styles.checkoutCard}><small>VALOR REGULAR</small><del>US$150</del><p>PRECIO ESPECIAL VENEZUELA</p><strong>120 <i>USDT</i></strong><span>Pago directo · Atención personal por WhatsApp</span><WhatsAppButton label="Quiero inscribirme por 120 USDT" /><small className={styles.safe}>Te confirmamos los datos oficiales de pago directamente por WhatsApp.</small></aside>
+        <aside className={styles.checkoutCard}><small>VALOR REGULAR</small><del>US$150</del><p>PRECIO VENEZUELA · 20% OFF</p>
+          <strong>120 <i>USDT</i></strong>
+          <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>90 <i>USDT</i></b></div><span>Pago directo · Atención personal por WhatsApp</span><WhatsAppButton label="Quiero pagar 90 USDT con Binance" /><small className={styles.safe}>Te confirmamos los datos oficiales de pago directamente por WhatsApp.</small></aside>
       </section>
 
       <section className={styles.faq}>
@@ -143,7 +147,7 @@ export default function CursoHumanPowderVenezuela() {
           <details><summary>¿Incluye prácticas?</summary><p>Sí. Incluye ejercicios y prácticas en piel sintética, además de cuatro modelos de cejas con distintos efectos.</p></details>
           <details><summary>¿Incluye modelo real?</summary><p>Sí. El programa incluye un procedimiento en modelo real para observar la integración completa de la técnica.</p></details>
           <details><summary>¿Tendré acompañamiento?</summary><p>Sí. La inscripción incluye 6 meses de soporte privado por WhatsApp.</p></details>
-          <details><summary>¿Cómo me inscribo desde Venezuela?</summary><p>Pulsa el botón de WhatsApp. Nuestro equipo te confirma el precio especial de 120 USDT y te comparte los datos oficiales de pago.</p></details>
+          <details><summary>¿Cómo me inscribo desde Venezuela?</summary><p>Pulsa el botón de WhatsApp. Nuestro equipo te confirma el precio Binance de 90 USDT y te comparte los datos oficiales de pago.</p></details>
         </div>
       </section>
 
