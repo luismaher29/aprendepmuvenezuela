@@ -32,7 +32,7 @@ const included = [
 ];
 
 const whatsappMessage =
-  'Hola, estoy en Venezuela 🇻🇪 y quiero inscribirme en el Curso de Microblading por 96 USDT. Quiero recibir la información y los datos para realizar el pago.';
+  'Hola, estoy en Venezuela 🇻🇪 y quiero inscribirme en el Curso de Microblading con el beneficio Binance del 40% por 72 USDT. Quiero recibir los datos para realizar el pago.';
 
 const buyUrl = whatsappUrl(whatsappMessage, {
   source: 'landing_curso_microblading',
@@ -90,8 +90,9 @@ export default function CursoMicrobladingVenezuela() {
           <div className={styles.priceCard}>
             <small>VALOR REGULAR</small>
             <del>US$120</del>
-            <span>BENEFICIO VENEZUELA</span>
+            <span>BENEFICIO VENEZUELA · 20% OFF</span>
             <strong>96 <i>USDT</i></strong>
+            <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>72 <i>USDT</i></b></div>
           </div>
         </div>
       </section>
@@ -221,10 +222,11 @@ export default function CursoMicrobladingVenezuela() {
         </div>
         <aside className={styles.checkoutCard}>
           <small>VALOR REGULAR</small><del>US$120</del>
-          <p>PRECIO ESPECIAL VENEZUELA</p>
+          <p>PRECIO VENEZUELA · 20% OFF</p>
           <strong>96 <i>USDT</i></strong>
+          <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>72 <i>USDT</i></b></div>
           <span>Pago directo · Atención personal por WhatsApp</span>
-          <WhatsAppButton label="Quiero inscribirme por 96 USDT" />
+          <WhatsAppButton label="Quiero pagar 72 USDT con Binance" />
           <small className={styles.safe}>Te confirmamos los datos oficiales de pago directamente por WhatsApp.</small>
         </aside>
       </section>
@@ -239,7 +241,7 @@ export default function CursoMicrobladingVenezuela() {
           <details><summary>¿Tendré acompañamiento?</summary><p>Sí. La inscripción incluye 6 meses de soporte privado por WhatsApp durante tu proceso de aprendizaje.</p></details>
           <details><summary>¿Incluye prácticas y modelos reales?</summary><p>Sí. El programa incorpora práctica en papel y piel sintética, además de procedimientos en modelos reales.</p></details>
           <details><summary>¿Recibo certificado?</summary><p>Sí. Al finalizar puedes obtener tu certificado de finalización y aprobación del programa.</p></details>
-          <details><summary>¿Cómo me inscribo desde Venezuela?</summary><p>Pulsa el botón de WhatsApp. Nuestro equipo te confirma el precio especial de 96 USDT y te comparte los datos oficiales de pago.</p></details>
+          <details><summary>¿Cómo me inscribo desde Venezuela?</summary><p>Pulsa el botón de WhatsApp. Nuestro equipo te confirma el precio Binance de 72 USDT y te comparte los datos oficiales de pago.</p></details>
         </div>
       </section>
 
