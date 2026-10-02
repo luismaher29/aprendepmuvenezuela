@@ -71,7 +71,7 @@ export default function CursoHumanPowderVenezuela() {
         </div>
         <div className={styles.heroVisual}>
           <div className={styles.heroImage} role="img" aria-label="Curso avanzado Human Powder de Aprende PMU" style={{ backgroundImage: "linear-gradient(180deg,#211c1905,#211c1948),url('/courses/human-powder.webp')", backgroundPosition: 'center' }} />
-          <div className={styles.priceCard}><small>VALOR REGULAR</small><del>US$150</del><span>BENEFICIO VENEZUELA · 20% OFF</span>
+          <div className={styles.priceCard}><small>VALOR REGULAR</small><del>US$150</del><span>PRECIO VENEZUELA ACTUAL</span>
             <strong>120 <i>USDT</i></strong>
             <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>90 <i>USDT</i></b></div></div>
         </div>
@@ -133,7 +133,7 @@ export default function CursoHumanPowderVenezuela() {
 
       <section className={styles.checkout} id="inscripcion">
         <div><p className={`${styles.eyebrow} ${styles.light}`}>BENEFICIO VENEZUELA</p><h2>Eleva tu técnica con <em>Human Powder.</em></h2><p>Accede a la especialización avanzada con precio especial para Venezuela y acompañamiento durante tu proceso.</p><div className={styles.checkoutList}><span>✓ 7 módulos · 38 clases</span><span>✓ Acceso ilimitado</span><span>✓ 6 meses de soporte</span><span>✓ Certificado</span></div></div>
-        <aside className={styles.checkoutCard}><small>VALOR REGULAR</small><del>US$150</del><p>PRECIO VENEZUELA · 20% OFF</p>
+        <aside className={styles.checkoutCard}><small>VALOR REGULAR</small><del>US$150</del><p>PRECIO VENEZUELA ACTUAL</p>
           <strong>120 <i>USDT</i></strong>
           <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>90 <i>USDT</i></b></div><span>Pago directo · Atención personal por WhatsApp</span><WhatsAppButton label="Quiero pagar 90 USDT con Binance" /><small className={styles.safe}>Te confirmamos los datos oficiales de pago directamente por WhatsApp.</small></aside>
       </section>
