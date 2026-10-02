@@ -32,7 +32,7 @@ const included = [
 ];
 
 const whatsappMessage =
-  'Hola, estoy en Venezuela 🇻🇪 y quiero inscribirme en el Curso de Micropigmentación de Ojos por 105 USDT. Quiero recibir la información y los datos para realizar el pago.';
+  'Hola, estoy en Venezuela 🇻🇪 y quiero inscribirme en el Curso de Micropigmentación de Ojos con el beneficio Binance del 40% por 78 USDT. Quiero recibir los datos para realizar el pago.';
 
 const buyUrl = whatsappUrl(whatsappMessage, {
   source: 'landing_curso_ojos',
@@ -90,8 +90,9 @@ export default function CursoMicropigmentacionOjosVenezuela() {
           <div className={styles.priceCard}>
             <small>VALOR REGULAR</small>
             <del>US$130</del>
-            <span>BENEFICIO VENEZUELA</span>
+            <span>BENEFICIO VENEZUELA · 20% OFF</span>
             <strong>105 <i>USDT</i></strong>
+            <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>78 <i>USDT</i></b></div>
           </div>
         </div>
       </section>
@@ -221,10 +222,11 @@ export default function CursoMicropigmentacionOjosVenezuela() {
         </div>
         <aside className={styles.checkoutCard}>
           <small>VALOR REGULAR</small><del>US$130</del>
-          <p>PRECIO ESPECIAL VENEZUELA</p>
+          <p>PRECIO VENEZUELA · 20% OFF</p>
           <strong>105 <i>USDT</i></strong>
+          <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>78 <i>USDT</i></b></div>
           <span>Pago directo · Atención personal por WhatsApp</span>
-          <WhatsAppButton label="Quiero inscribirme por 105 USDT" />
+          <WhatsAppButton label="Quiero pagar 78 USDT con Binance" />
           <small className={styles.safe}>Te confirmamos los datos oficiales de pago directamente por WhatsApp.</small>
         </aside>
       </section>
@@ -239,7 +241,7 @@ export default function CursoMicropigmentacionOjosVenezuela() {
           <details><summary>¿Tendré acompañamiento?</summary><p>Sí. La inscripción incluye 6 meses de soporte privado por WhatsApp durante tu proceso de aprendizaje.</p></details>
           <details><summary>¿Qué técnicas incluye?</summary><p>Incluye Infraliner, Eyeliner, Smoke Eyes y Fantasy Colors, además de grosores, angulaciones y maniobras.</p></details>
           <details><summary>¿Incluye práctica y modelo real?</summary><p>Sí. El programa incorpora práctica en papel y piel sintética, además de procedimiento en modelo real.</p></details>
-          <details><summary>¿Cómo me inscribo desde Venezuela?</summary><p>Pulsa el botón de WhatsApp. Nuestro equipo te confirma el precio especial de 105 USDT y te comparte los datos oficiales de pago.</p></details>
+          <details><summary>¿Cómo me inscribo desde Venezuela?</summary><p>Pulsa el botón de WhatsApp. Nuestro equipo te confirma el precio Binance de 78 USDT y te comparte los datos oficiales de pago.</p></details>
         </div>
       </section>
 
