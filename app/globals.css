@@ -94,3 +94,12 @@ h2{font-size:clamp(2.35rem,11vw,2.85rem);line-height:.98}
 .social-links a:hover{color:var(--wine)}
 
 .binance-price{margin-top:10px;padding:14px 16px;border-radius:12px;background:linear-gradient(135deg,#fff7d6,#f2d36f);border:1px solid #d7b447;display:flex;align-items:center;justify-content:space-between;gap:14px}.binance-price small{font-size:.62rem;letter-spacing:.1em;font-weight:850;color:#5d4a08}.binance-price strong{font-family:var(--font-serif);font-size:2.15rem;line-height:1;color:#211c19;white-space:nowrap}.binance-price i{font:800 .56rem var(--font-sans);letter-spacing:.08em}.course-card.featured .binance-price{background:linear-gradient(135deg,#f8e9a8,#d9b55a);border-color:#d9b55a}.course-card.featured .binance-price small,.course-card.featured .binance-price strong{color:#211c19}@media(max-width:560px){.binance-price{align-items:flex-start;flex-direction:column;gap:5px}.binance-price strong{font-size:2rem}}
+
+.video-proof{display:grid;grid-template-columns:.86fr 1.14fr;gap:64px;align-items:center;border-top:1px solid rgba(169,130,98,.3)}
+.video-proof-copy h2{font-size:clamp(2.8rem,4.7vw,5rem);max-width:620px;margin-bottom:24px}
+.video-proof-copy>p:not(.eyebrow){max-width:590px;color:var(--muted);font-size:1rem;line-height:1.75}
+.video-proof-points{display:grid;gap:9px;margin:28px 0 32px;font-size:.76rem;color:var(--petrol);font-weight:700}
+.video-proof-player{position:relative;width:100%;aspect-ratio:16/9;background:var(--ink);border-radius:18px;overflow:hidden;box-shadow:0 28px 70px rgba(34,34,34,.14)}
+.video-proof-player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media(max-width:900px){.video-proof{grid-template-columns:1fr;gap:38px}.video-proof-copy h2{max-width:760px}}
+@media(max-width:560px){.video-proof{padding-top:76px;padding-bottom:76px}.video-proof-copy h2{font-size:2.55rem}.video-proof-copy .button{width:100%;text-align:center}.video-proof-player{border-radius:12px}}
