@@ -37,7 +37,7 @@ const included = [
 ];
 
 const whatsappMessage =
-  'Hola, estoy en Venezuela 🇻🇪 y quiero inscribirme en el Curso de Cejas Efecto Polvo por 120 USDT. Quiero recibir la información y los datos para realizar el pago.';
+  'Hola, estoy en Venezuela 🇻🇪 y quiero inscribirme en el Curso de Cejas Efecto Polvo con el beneficio Binance del 40% por 90 USDT. Quiero recibir los datos para realizar el pago.';
 
 const buyUrl = whatsappUrl(whatsappMessage, {
   source: 'landing_curso_efecto_polvo',
@@ -90,8 +90,9 @@ export default function CursoEfectoPolvoVenezuela() {
           <div className={styles.priceCard}>
             <small>PRECIO INTERNACIONAL</small>
             <del>US$150</del>
-            <span>BENEFICIO VENEZUELA</span>
+            <span>BENEFICIO VENEZUELA · 20% OFF</span>
             <strong>120 <i>USDT</i></strong>
+            <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>90 <i>USDT</i></b></div>
           </div>
         </div>
       </section>
@@ -216,10 +217,11 @@ export default function CursoEfectoPolvoVenezuela() {
         </div>
         <aside className={styles.checkoutCard}>
           <small>PRECIO INTERNACIONAL</small><del>US$150</del>
-          <p>PRECIO ESPECIAL VENEZUELA</p>
+          <p>PRECIO VENEZUELA · 20% OFF</p>
           <strong>120 <i>USDT</i></strong>
+          <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>90 <i>USDT</i></b></div>
           <span>Pago directo · Atención personal por WhatsApp</span>
-          <WhatsAppButton label="Quiero inscribirme por 120 USDT" />
+          <WhatsAppButton label="Quiero pagar 90 USDT con Binance" />
           <small className={styles.safe}>Te confirmamos los datos oficiales de pago directamente por WhatsApp.</small>
         </aside>
       </section>
