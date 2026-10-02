@@ -12,7 +12,7 @@ export const productLandings: Record<string, ProductLandingConfig> = {
     title: 'Transforma tu práctica con Labios Artísticos en piel sintética.',
     lead: 'Una formación para profesionales de labios que quieren mejorar destreza artística, puntillismo, arrastre y construcción de efectos antes de llevarlos a procedimientos reales.',
     facts: ['13 módulos', '61 clases', 'Piel sintética', 'Soporte 6 meses'],
-    image: '/courses/labios-artisticos.png', regularPrice: 'US$50', venezuelaPrice: '40 USDT', whatsappProduct: 'el Curso de Labios Artísticos en Piel Sintética', source: 'curso_labios_artisticos',
+    image: '/courses/labios-artisticos.png', regularPrice: 'US$50', venezuelaPrice: '40 USDT', binancePrice: '30 USDT', whatsappProduct: 'el Curso de Labios Artísticos en Piel Sintética', source: 'curso_labios_artisticos',
     problemEyebrow: 'PRÁCTICA ARTÍSTICA', problemTitle: 'La piel sintética te permite entrenar efectos sin improvisar sobre una persona.', problemCopy: 'Este curso está pensado para perfeccionar coordinación, saturación, puntillismo y arrastre mediante ejercicios que desarrollan control y lectura visual.',
     pillars: [
       { title: 'Puntillismo', copy: 'Trabaja densidad, ritmo y distribución del punto para controlar mejor el acabado.' },
@@ -34,14 +34,14 @@ export const productLandings: Record<string, ProductLandingConfig> = {
     included: ['13 módulos', '61 clases', 'Videos Full HD', 'Prácticas en piel sintética', 'Acceso ilimitado', '6 meses de soporte', 'Certificado'],
     audienceFor: ['Ya realizas micropigmentación de labios.', 'Quieres mejorar tu destreza artística y técnica.', 'Buscas practicar efectos antes de aplicarlos en clientes.', 'Quieres estudiar a tu ritmo con acompañamiento.'],
     audienceNot: ['Buscas una introducción básica a la micropigmentación de labios.', 'No deseas realizar prácticas repetitivas.', 'Esperas dominar efectos sin entrenamiento manual.'],
-    checkoutTitle: 'Perfecciona tu técnica con Labios Artísticos.', checkoutCopy: 'Accede al programa completo con precio especial para Venezuela y acompañamiento durante tu proceso.', ctaLabel: 'Quiero acceder por 40 USDT',
+    checkoutTitle: 'Perfecciona tu técnica con Labios Artísticos.', checkoutCopy: 'Accede al programa completo con precio especial para Venezuela y acompañamiento durante tu proceso.', ctaLabel: 'Quiero pagar 30 USDT con Binance',
     faq: [{ question: '¿Necesito experiencia previa?', answer: 'Preferiblemente sí. Está dirigido a profesionales de micropigmentación de labios que desean perfeccionar su práctica.' }, { question: '¿Incluye asesoría?', answer: 'Incluye 6 meses de soporte privado durante el proceso de aprendizaje.' }, ...commonFaq],
   },
 
   'curso-pigmentologia': {
     eyebrow: 'FORMACIÓN ONLINE · COLOR', title: 'Comprende la pigmentología y la colorimetría desde la física, la química y la piel.',
     lead: 'Una formación avanzada para dejar de escoger pigmentos por intuición y comenzar a entender cómo luz, profundidad, matiz, fototipo y composición influyen en el resultado.',
-    facts: ['9 módulos', '35 clases', '+5 horas Full HD', 'Soporte 6 meses'], image: '/courses/pigmentologia.png', regularPrice: 'US$130', venezuelaPrice: '105 USDT', whatsappProduct: 'el Curso de Pigmentología y Colorimetría Avanzada', source: 'curso_pigmentologia',
+    facts: ['9 módulos', '35 clases', '+5 horas Full HD', 'Soporte 6 meses'], image: '/courses/pigmentologia.png', regularPrice: 'US$130', venezuelaPrice: '105 USDT', binancePrice: '78 USDT', whatsappProduct: 'el Curso de Pigmentología y Colorimetría Avanzada', source: 'curso_pigmentologia',
     problemEyebrow: 'COLOR CON FUNDAMENTO', problemTitle: 'Elegir una tinta bien requiere comprender qué ocurre con el color dentro de la piel.', problemCopy: 'La formación conecta ciencia del color, piel y formulación para que tus decisiones sean más conscientes y previsibles.',
     pillars: [
       { title: 'Luz y profundidad', copy: 'Comprende cómo cambian la percepción y el comportamiento del color.' },
@@ -62,13 +62,13 @@ export const productLandings: Record<string, ProductLandingConfig> = {
     practiceEyebrow: 'APLICACIÓN', practiceTitle: 'Aprende a justificar cada elección de pigmento.', practiceCopy: 'El objetivo es que puedas explicar por qué eliges una tinta, un corrector o una estrategia cromática.', practiceSteps: ['Luz', 'Matiz', 'Fototipo', 'Composición', 'Corrección', 'Selección'],
     included: ['9 módulos', '35 clases', '+5 horas Full HD', 'Material descargable', 'Acceso ilimitado', '6 meses de soporte', 'Certificado'],
     audienceFor: ['Profesionales de Microblading y PMU.', 'Quieres profundizar en física y química del color.', 'Deseas elegir pigmentos con más criterio.', 'Quieres mejorar neutralizaciones y correcciones.'], audienceNot: ['Buscas una lista rígida de mezclas sin comprender fundamentos.', 'No deseas estudiar conceptos técnicos.', 'Solo quieres memorizar nombres comerciales.'],
-    checkoutTitle: 'Convierte el color en una herramienta profesional.', checkoutCopy: 'Accede al curso completo con precio especial para Venezuela.', ctaLabel: 'Quiero inscribirme por 105 USDT', faq: [{ question: '¿Incluye material descargable?', answer: 'Sí. El programa incluye guías, recursos y plantillas de apoyo.' }, { question: '¿Incluye certificado?', answer: 'Sí. Al finalizar puedes descargar tu certificado de finalización y aprobación.' }, ...commonFaq],
+    checkoutTitle: 'Convierte el color en una herramienta profesional.', checkoutCopy: 'Accede al curso completo con precio especial para Venezuela.', ctaLabel: 'Quiero pagar 78 USDT con Binance', faq: [{ question: '¿Incluye material descargable?', answer: 'Sí. El programa incluye guías, recursos y plantillas de apoyo.' }, { question: '¿Incluye certificado?', answer: 'Sí. Al finalizar puedes descargar tu certificado de finalización y aprobación.' }, ...commonFaq],
   },
 
   'curso-remocion-cejas': {
     eyebrow: 'FORMACIÓN ONLINE · HUMAN REMOVAL', title: 'Aprende remoción de cejas con protocolos, criterio y seguridad profesional.',
     lead: 'Una formación teórico-práctica para comprender cuándo remover, corregir o camuflar y cómo ejecutar un protocolo de remoción de manera responsable.',
-    facts: ['8 módulos', '44 clases', '+5 horas Full HD', 'Soporte 6 meses'], image: '/courses/remocion-cejas.jpg', regularPrice: 'US$150', venezuelaPrice: '120 USDT', whatsappProduct: 'el Curso Human Removal de Remoción de Cejas', source: 'curso_remocion_cejas',
+    facts: ['8 módulos', '44 clases', '+5 horas Full HD', 'Soporte 6 meses'], image: '/courses/remocion-cejas.jpg', regularPrice: 'US$150', venezuelaPrice: '120 USDT', binancePrice: '90 USDT', whatsappProduct: 'el Curso Human Removal de Remoción de Cejas', source: 'curso_remocion_cejas',
     problemEyebrow: 'CORREGIR CON CRITERIO', problemTitle: 'No todo trabajo anterior debe removerse, y no toda remoción se aborda igual.', problemCopy: 'El curso enseña a evaluar el caso antes de intervenir y a comprender las variables químicas y técnicas que afectan el procedimiento.',
     pillars: [
       { title: 'Diagnóstico', copy: 'Diferencia cuándo remover, camuflar o corregir.' },
@@ -87,7 +87,7 @@ export const productLandings: Record<string, ProductLandingConfig> = {
       { title: 'Preparación de la piel', copy: 'Condiciones previas y organización del procedimiento.' },
       { title: 'Protocolo completo', copy: 'Integración de los fundamentos en una secuencia profesional.' },
     ],
-    included: ['8 módulos', '44 clases', '+5 horas Full HD', 'Material descargable', 'Acceso ilimitado', '6 meses de soporte', 'Certificado'], audienceFor: ['Eres profesional de micropigmentación.', 'Ya tienes manejo técnico de PMU.', 'Quieres aprender a evaluar trabajos previos.', 'Buscas incorporar remoción de forma profesional.'], audienceNot: ['No tienes conocimientos previos de micropigmentación.', 'Buscas remover sin estudiar contraindicaciones.', 'No deseas aprender fundamentos químicos ni protocolos.'], checkoutTitle: 'Incorpora remoción de cejas con una base profesional.', checkoutCopy: 'Accede a Human Removal con precio especial para Venezuela.', ctaLabel: 'Quiero inscribirme por 120 USDT', faq: [{ question: '¿Necesito conocimientos previos?', answer: 'Sí. Está dirigido a profesionales con conocimientos y manejo en micropigmentación.' }, { question: '¿Incluye química y pH?', answer: 'Sí. El programa incluye ácidos usados en remoción y relación del pH de la piel y de los ácidos.' }, ...commonFaq],
+    included: ['8 módulos', '44 clases', '+5 horas Full HD', 'Material descargable', 'Acceso ilimitado', '6 meses de soporte', 'Certificado'], audienceFor: ['Eres profesional de micropigmentación.', 'Ya tienes manejo técnico de PMU.', 'Quieres aprender a evaluar trabajos previos.', 'Buscas incorporar remoción de forma profesional.'], audienceNot: ['No tienes conocimientos previos de micropigmentación.', 'Buscas remover sin estudiar contraindicaciones.', 'No deseas aprender fundamentos químicos ni protocolos.'], checkoutTitle: 'Incorpora remoción de cejas con una base profesional.', checkoutCopy: 'Accede a Human Removal con precio especial para Venezuela.', ctaLabel: 'Quiero pagar 90 USDT con Binance', faq: [{ question: '¿Necesito conocimientos previos?', answer: 'Sí. Está dirigido a profesionales con conocimientos y manejo en micropigmentación.' }, { question: '¿Incluye química y pH?', answer: 'Sí. El programa incluye ácidos usados en remoción y relación del pH de la piel y de los ácidos.' }, ...commonFaq],
   },
 
   'especializacion-pmu': {
