@@ -35,7 +35,7 @@ const included = [
 ];
 
 const whatsappMessage =
-  'Hola, estoy en Venezuela 🇻🇪 y quiero inscribirme en el Curso de Hairstroke por 200 USDT. Quiero recibir la información y los datos para realizar el pago.';
+  'Hola, estoy en Venezuela 🇻🇪 y quiero inscribirme en el Curso de Hairstroke con el beneficio Binance del 40% por 150 USDT. Quiero recibir los datos para realizar el pago.';
 
 const buyUrl = whatsappUrl(whatsappMessage, {
   source: 'landing_curso_hairstroke',
@@ -93,8 +93,9 @@ export default function CursoHairstrokeVenezuela() {
           <div className={styles.priceCard}>
             <small>PRECIO INTERNACIONAL</small>
             <del>US$250</del>
-            <span>BENEFICIO VENEZUELA</span>
+            <span>BENEFICIO VENEZUELA · 20% OFF</span>
             <strong>200 <i>USDT</i></strong>
+            <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>150 <i>USDT</i></b></div>
           </div>
         </div>
       </section>
@@ -224,10 +225,11 @@ export default function CursoHairstrokeVenezuela() {
         </div>
         <aside className={styles.checkoutCard}>
           <small>PRECIO INTERNACIONAL</small><del>US$250</del>
-          <p>PRECIO ESPECIAL VENEZUELA</p>
+          <p>PRECIO VENEZUELA · 20% OFF</p>
           <strong>200 <i>USDT</i></strong>
+          <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>150 <i>USDT</i></b></div>
           <span>Pago directo · Atención personal por WhatsApp</span>
-          <WhatsAppButton label="Quiero inscribirme por 200 USDT" />
+          <WhatsAppButton label="Quiero pagar 150 USDT con Binance" />
           <small className={styles.safe}>Te confirmamos los datos oficiales de pago directamente por WhatsApp.</small>
         </aside>
       </section>
@@ -241,7 +243,7 @@ export default function CursoHairstrokeVenezuela() {
           <details><summary>¿Cómo funciona el acompañamiento?</summary><p>Durante 6 meses tendrás acceso al grupo exclusivo de alumnos para enviar prácticas, recibir correcciones y aclarar dudas relacionadas con las clases.</p></details>
           <details><summary>¿Hay práctica en piel sintética?</summary><p>Sí. La metodología incluye práctica previa en papel y piel sintética antes de observar la integración completa en modelo real.</p></details>
           <details><summary>¿Incluye procedimiento en modelo real?</summary><p>Sí. El programa incluye demostración del procedimiento para observar cómo se integran diseño, selección de herramientas y ejecución.</p></details>
-          <details><summary>¿Cómo me inscribo desde Venezuela?</summary><p>Pulsa el botón de WhatsApp. Nuestro equipo te confirma el precio especial de 200 USDT y te comparte los datos oficiales de pago disponibles.</p></details>
+          <details><summary>¿Cómo me inscribo desde Venezuela?</summary><p>Pulsa el botón de WhatsApp. Nuestro equipo te confirma el precio Binance de 150 USDT y te comparte los datos oficiales de pago disponibles.</p></details>
         </div>
       </section>
 
