@@ -90,7 +90,7 @@ export default function CursoMicrobladingVenezuela() {
           <div className={styles.priceCard}>
             <small>VALOR REGULAR</small>
             <del>US$120</del>
-            <span>BENEFICIO VENEZUELA · 20% OFF</span>
+            <span>PRECIO VENEZUELA ACTUAL</span>
             <strong>96 <i>USDT</i></strong>
             <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>72 <i>USDT</i></b></div>
           </div>
@@ -222,7 +222,7 @@ export default function CursoMicrobladingVenezuela() {
         </div>
         <aside className={styles.checkoutCard}>
           <small>VALOR REGULAR</small><del>US$120</del>
-          <p>PRECIO VENEZUELA · 20% OFF</p>
+          <p>PRECIO VENEZUELA ACTUAL</p>
           <strong>96 <i>USDT</i></strong>
           <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>72 <i>USDT</i></b></div>
           <span>Pago directo · Atención personal por WhatsApp</span>
