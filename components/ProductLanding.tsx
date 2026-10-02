@@ -10,6 +10,7 @@ export type ProductLandingConfig = {
   imagePosition?: string;
   regularPrice?: string;
   venezuelaPrice?: string;
+  binancePrice?: string;
   priceLabel?: string;
   whatsappProduct: string;
   source: string;
@@ -38,7 +39,7 @@ export type ProductLandingConfig = {
 };
 
 function WhatsAppButton({ config, label, className }: { config: ProductLandingConfig; label: string; className?: string }) {
-  const price = config.venezuelaPrice ? ` por ${config.venezuelaPrice}` : '';
+  const price = config.binancePrice ? ` con precio Binance de ${config.binancePrice}` : config.venezuelaPrice ? ` por ${config.venezuelaPrice}` : '';
   const message = `Hola, estoy en Venezuela 🇻🇪 y quiero adquirir ${config.whatsappProduct}${price}. Quiero recibir la información y los datos para realizar el pago.`;
   const url = whatsappUrl(message, { source: config.source, medium: 'whatsapp', campaign: `${config.source}_venezuela` });
   return <a className={className || styles.primaryButton} href={url} target="_blank" rel="noreferrer" data-event={`click_whatsapp_${config.source}`}>{label} <span aria-hidden>↗</span></a>;
@@ -65,7 +66,7 @@ export default function ProductLanding({ config }: { config: ProductLandingConfi
         <div className={styles.heroImage} role="img" aria-label={config.whatsappProduct} style={{backgroundImage:`linear-gradient(180deg,#211c1905,#211c1948),url('${config.image}')`,backgroundPosition:config.imagePosition || 'center'}}/>
         {(config.regularPrice || config.venezuelaPrice) && <div className={styles.priceCard}>
           {config.regularPrice && <><small>VALOR DE REFERENCIA</small><del>{config.regularPrice}</del></>}
-          {config.venezuelaPrice && <><span>{config.priceLabel || 'PRECIO VENEZUELA'}</span><strong>{config.venezuelaPrice}</strong></>}
+          {config.venezuelaPrice && <><span>{config.priceLabel || 'PRECIO VENEZUELA ACTUAL'}</span><strong>{config.venezuelaPrice}</strong></>}{config.binancePrice && <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>{config.binancePrice}</b></div>}
         </div>}
       </div>
     </section>
@@ -98,7 +99,7 @@ export default function ProductLanding({ config }: { config: ProductLandingConfi
 
     <section className={styles.teacher}><div className={styles.teacherPhoto} role="img" aria-label="Verónica Montaño" style={{backgroundImage:`linear-gradient(180deg,#0000,#211c1932),url('${config.image}')`,backgroundPosition:config.imagePosition || 'center'}}/><div><p className={styles.eyebrow}>TU INSTRUCTORA</p><h2>Aprende junto a Verónica Montaño.</h2><p>{config.teacherCopy || 'Profesional y educadora en micropigmentación con más de 17 años de experiencia. Su metodología combina fundamentos, práctica y criterio profesional para ayudarte a comprender el porqué detrás de cada decisión.'}</p><div className={styles.teacherStats}><span><strong>17+</strong> años de experiencia</span><span><strong>PMU</strong> arte + técnica</span></div></div></section>
 
-    <section className={styles.checkout} id="inscripcion"><div><p className={`${styles.eyebrow} ${styles.light}`}>APRENDE PMU · VENEZUELA</p><h2>{config.checkoutTitle}</h2><p>{config.checkoutCopy}</p><div className={styles.checkoutList}>{config.included.slice(0,4).map(item=><span key={item}>✓ {item}</span>)}</div></div><aside className={styles.checkoutCard}>{config.regularPrice && <><small>VALOR DE REFERENCIA</small><del>{config.regularPrice}</del></>}{config.venezuelaPrice && <><p>{config.priceLabel || 'PRECIO VENEZUELA'}</p><strong>{config.venezuelaPrice}</strong></>}<span>Atención personal por WhatsApp</span><WhatsAppButton config={config} label={config.ctaLabel || 'Quiero adquirirlo'}/><small className={styles.safe}>Te confirmamos directamente el proceso de pago y acceso.</small></aside></section>
+    <section className={styles.checkout} id="inscripcion"><div><p className={`${styles.eyebrow} ${styles.light}`}>APRENDE PMU · VENEZUELA</p><h2>{config.checkoutTitle}</h2><p>{config.checkoutCopy}</p><div className={styles.checkoutList}>{config.included.slice(0,4).map(item=><span key={item}>✓ {item}</span>)}</div></div><aside className={styles.checkoutCard}>{config.regularPrice && <><small>VALOR DE REFERENCIA</small><del>{config.regularPrice}</del></>}{config.venezuelaPrice && <><p>{config.priceLabel || 'PRECIO VENEZUELA ACTUAL'}</p><strong>{config.venezuelaPrice}</strong></>}{config.binancePrice && <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>{config.binancePrice}</b></div>}<span>Atención personal por WhatsApp</span><WhatsAppButton config={config} label={config.ctaLabel || 'Quiero adquirirlo'}/><small className={styles.safe}>Te confirmamos directamente el proceso de pago y acceso.</small></aside></section>
 
     <section className={styles.faq}><p className={styles.eyebrow}>PREGUNTAS FRECUENTES</p><h2>Antes de comenzar</h2><div>{config.faq.map(item=><details key={item.question}><summary>{item.question}</summary><p>{item.answer}</p></details>)}</div></section>
 

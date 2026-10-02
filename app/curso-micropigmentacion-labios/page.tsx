@@ -42,7 +42,7 @@ const included = [
 ];
 
 const whatsappMessage =
-  'Hola, estoy en Venezuela 🇻🇪 y quiero inscribirme en el Curso de Micropigmentación de Labios por 200 USDT. Quiero recibir la información y los datos para realizar el pago.';
+  'Hola, estoy en Venezuela 🇻🇪 y quiero inscribirme en el Curso de Micropigmentación de Labios con el beneficio Binance del 40% por 150 USDT. Quiero recibir los datos para realizar el pago.';
 
 const buyUrl = whatsappUrl(whatsappMessage, {
   source: 'landing_curso_labios',
@@ -100,8 +100,9 @@ export default function CursoMicropigmentacionLabiosVenezuela() {
           <div className={styles.priceCard}>
             <small>PRECIO INTERNACIONAL</small>
             <del>US$250</del>
-            <span>BENEFICIO VENEZUELA</span>
+            <span>PRECIO VENEZUELA ACTUAL</span>
             <strong>200 <i>USDT</i></strong>
+            <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>150 <i>USDT</i></b></div>
           </div>
         </div>
       </section>
@@ -231,10 +232,11 @@ export default function CursoMicropigmentacionLabiosVenezuela() {
         </div>
         <aside className={styles.checkoutCard}>
           <small>PRECIO INTERNACIONAL</small><del>US$250</del>
-          <p>PRECIO ESPECIAL VENEZUELA</p>
+          <p>PRECIO VENEZUELA ACTUAL</p>
           <strong>200 <i>USDT</i></strong>
+          <div className={styles.binanceOffer}><small>PAGA CON BINANCE · 40% OFF</small><b>150 <i>USDT</i></b></div>
           <span>Incluye Curso Labios Artísticos · Valor USD 50</span>
-          <WhatsAppButton label="Quiero inscribirme por 200 USDT" />
+          <WhatsAppButton label="Quiero pagar 150 USDT con Binance" />
           <small className={styles.safe}>Te confirmamos los datos oficiales de pago directamente por WhatsApp.</small>
         </aside>
       </section>
@@ -249,7 +251,7 @@ export default function CursoMicropigmentacionLabiosVenezuela() {
           <details><summary>¿Tendré acompañamiento?</summary><p>Sí. La inscripción incluye 6 meses de soporte privado para acompañarte durante tu proceso de aprendizaje.</p></details>
           <details><summary>¿Incluye neutralización de labios oscuros?</summary><p>Sí. El programa incluye neutralización y criterios para comprender cuándo debe realizarse antes de trabajar el color final.</p></details>
           <details><summary>¿Qué curso recibo de regalo?</summary><p>La oferta actual incluye el curso de Labios Artísticos, valorado en USD 50, sin costo adicional.</p></details>
-          <details><summary>¿Cómo me inscribo desde Venezuela?</summary><p>Pulsa el botón de WhatsApp. Nuestro equipo te confirma el precio especial de 200 USDT y te comparte los datos oficiales de pago disponibles.</p></details>
+          <details><summary>¿Cómo me inscribo desde Venezuela?</summary><p>Pulsa el botón de WhatsApp. Nuestro equipo te confirma el precio Binance de 150 USDT y te comparte los datos oficiales de pago disponibles.</p></details>
         </div>
       </section>
 
