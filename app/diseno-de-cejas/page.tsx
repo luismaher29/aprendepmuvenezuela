@@ -5,7 +5,7 @@ import { whatsappUrl } from '@/lib/whatsapp';
 export const metadata: Metadata = {
   title: 'Guía Profesional de Diseño de Cejas | Venezuela · Aprende PMU',
   description:
-    'Más de 190 páginas sobre diseño profesional de cejas, visagismo, proporción, asimetrías, correcciones, práctica y henna. Precio especial Venezuela: 9.99 USDT.',
+    'Más de 190 páginas sobre diseño profesional de cejas, visagismo, proporción, asimetrías, correcciones, práctica y henna. Precio: US$19.99.',
 };
 
 const benefits = [
@@ -20,12 +20,12 @@ const benefits = [
 ];
 
 const whatsappMessage =
-  'Hola, estoy en Venezuela 🇻🇪 y quiero adquirir la Guía Profesional de Diseño de Cejas por 9.99 USDT. Quiero recibir los datos para realizar el pago por Binance.';
+  'Hola, estoy en Venezuela 🇻🇪 y quiero adquirir la Guía Profesional de Diseño de Cejas por US$19.99. Quiero recibir los datos para realizar el pago por Binance.';
 
 const buyUrl = whatsappUrl(whatsappMessage, {
   source: 'landing_diseno_cejas',
   medium: 'whatsapp',
-  campaign: 'guia_999_venezuela',
+  campaign: 'guia_diseno_cejas',
 });
 
 function WhatsAppButton({ className, label }: { className?: string; label: string }) {
@@ -55,23 +55,19 @@ export default function DisenoDeCejasVenezuela() {
 
       <section className={styles.hero}>
         <div className={styles.heroCopy}>
-          <p className={styles.eyebrow}><span>VE</span> OFERTA ESPECIAL VENEZUELA</p>
+          <p className={styles.eyebrow}><span>VE</span> GUÍA PROFESIONAL · DISEÑO DE CEJAS</p>
           <h1>Diseña cejas con <em>criterio profesional.</em></h1>
           <p className={styles.lead}>
             Una guía digital de más de <strong>190 páginas</strong> para comprender el rostro,
             trabajar proporciones, corregir asimetrías y tomar mejores decisiones antes de aplicar cualquier técnica.
           </p>
           <div className={styles.priceRow}>
-            <div>
-              <small>ANTES</small>
-              <del>US$19.99</del>
-            </div>
             <div className={styles.today}>
-              <small>PRECIO VENEZUELA</small>
-              <strong>9.99 <i>USDT</i></strong>
+              <small>PRECIO</small>
+              <strong>US$19.99</strong>
             </div>
           </div>
-          <WhatsAppButton label="Quiero mi guía por 9.99 USDT" />
+          <WhatsAppButton label="Quiero mi guía por US$19.99" />
           <p className={styles.meta}>100% digital · Atención por WhatsApp · Pago por Binance · Entrega por correo</p>
         </div>
 
@@ -137,14 +133,14 @@ export default function DisenoDeCejasVenezuela() {
       <section className={styles.checkoutSection} id="comprar">
         <div className={styles.checkoutIntro}>
           <p className={styles.eyebrow}>COMPRA ACOMPAÑADA · VENEZUELA</p>
-          <h2>Tu guía por <em>9.99 USDT.</em></h2>
+          <h2>Tu guía por <em>US$19.99.</em></h2>
           <p>
-            Antes de pagar, conversa con nuestro equipo por WhatsApp. Te confirmamos la oferta, compartimos los datos oficiales de Binance y te acompañamos hasta que recibas tu guía.
+            Antes de pagar, conversa con nuestro equipo por WhatsApp. Te confirmamos el precio, compartimos los datos oficiales de Binance y te acompañamos hasta que recibas tu guía.
           </p>
 
           <div className={styles.steps}>
             <div><b>01</b><span>Pulsa el botón y escríbenos directamente por <strong>WhatsApp</strong>.</span></div>
-            <div><b>02</b><span>Te confirmamos el precio de <strong>9.99 USDT</strong> y te enviamos los datos oficiales para pagar por Binance.</span></div>
+            <div><b>02</b><span>Te confirmamos el precio de <strong>US$19.99</strong> y te enviamos los datos oficiales para pagar por Binance.</span></div>
             <div><b>03</b><span>Nos envías por WhatsApp el comprobante, tu nombre y el correo donde quieres recibir la guía.</span></div>
             <div><b>04</b><span>Verificamos el pago y enviamos la guía digital a tu correo electrónico.</span></div>
           </div>
@@ -158,7 +154,7 @@ export default function DisenoDeCejasVenezuela() {
             Queremos que compres con tranquilidad. Nuestro equipo te atenderá por WhatsApp, resolverá tus dudas y te dará los datos de pago de forma directa.
           </p>
           <div className={styles.trustList}>
-            <span>✓ Precio Venezuela confirmado: <strong>9.99 USDT</strong></span>
+            <span>✓ Precio confirmado: <strong>US$19.99</strong></span>
             <span>✓ Datos oficiales de Binance enviados por el equipo</span>
             <span>✓ Puedes enviar el comprobante por el mismo chat</span>
             <span>✓ Nombre y correo se toman directamente por WhatsApp</span>
@@ -170,8 +166,8 @@ export default function DisenoDeCejasVenezuela() {
       </section>
 
       <section className={styles.finalCta}>
-        <p className={`${styles.eyebrow} ${styles.light}`}>PRECIO ESPECIAL VENEZUELA</p>
-        <h2>Más de 190 páginas.<br/><em>Solo 9.99 USDT.</em></h2>
+        <p className={`${styles.eyebrow} ${styles.light}`}>GUÍA PROFESIONAL DE DISEÑO DE CEJAS</p>
+        <h2>Más de 190 páginas.<br/><em>US$19.99.</em></h2>
         <p>Escríbenos por WhatsApp y una persona de nuestro equipo te ayudará a completar tu compra.</p>
         <WhatsAppButton label="Quiero adquirir la guía" />
       </section>
@@ -182,7 +178,7 @@ export default function DisenoDeCejasVenezuela() {
         <div>
           <details><summary>¿La guía es física?</summary><p>No. Es un producto 100% digital y se entrega por correo electrónico.</p></details>
           <details><summary>¿Necesito ser micropigmentadora?</summary><p>No. También es útil si trabajas con diseño tradicional, henna, laminado o estás comenzando en el mundo de las cejas.</p></details>
-          <details><summary>¿Cómo se realiza el pago?</summary><p>Escríbenos por WhatsApp. Nuestro equipo te confirma la oferta de 9.99 USDT y te envía directamente los datos oficiales para realizar el pago por Binance.</p></details>
+          <details><summary>¿Cómo se realiza el pago?</summary><p>Escríbenos por WhatsApp. Nuestro equipo te confirma el precio de US$19.99 y te envía directamente los datos oficiales para realizar el pago por Binance.</p></details>
           <details><summary>¿Qué datos debo enviar?</summary><p>Después de pagar, puedes enviarnos por el mismo WhatsApp el comprobante, tu nombre y el correo electrónico donde deseas recibir la guía.</p></details>
           <details><summary>¿Cuándo recibo la guía?</summary><p>Después de verificar el pago, enviamos la guía digital al correo que nos indiques por WhatsApp.</p></details>
           <details><summary>¿Puedo compartirla con otra persona?</summary><p>No. La compra es para uso personal. El contenido está protegido por derechos de autor.</p></details>
